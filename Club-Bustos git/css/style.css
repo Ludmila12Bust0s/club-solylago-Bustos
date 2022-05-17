@@ -1,0 +1,439 @@
+*{
+    box-sizing: border-box;
+}
+h1{
+   font-size: 3REM;
+   font-family: 'Bebas Neue', cursive;
+    font-weight: 600;
+    color:rgb(13, 13, 17);
+    background: url("../imagenes/fondopile2.jpg");
+    background-repeat: no-repeat;
+    text-align: center; 
+}
+#logo{
+    text-align: center;
+    align-items: center;
+    width: 100%;
+}
+#barra {
+    list-style: none;
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: initial;
+    background-color: #F5F5F5;
+}
+li {
+  padding: 0px;
+  margin: 10px;
+  width: 100px;
+  display: inline-block;
+  font-size: 18px;
+}
+.menu {
+    color:rgb(0, 0, 0);
+    text-decoration: none;
+    position: sticky;
+}
+.menu:hover{
+    text-decoration: underline;
+    color:rgb(26, 26, 194);
+}
+h2 {
+    font-size: 2REM;
+    font-family: 'Nunito', sans-serif;
+    color:rgb(68, 68, 177);
+    text-align: center;
+    border: double;
+    border-color:black;
+}
+.texto {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
+    color:rgb(0, 0, 0);
+    display: flex;
+    text-align: center;
+    width:fit-content;
+    padding: 5%;
+    border: dotted;
+    border-width: 1px; 
+    border-color: rgb(21, 109, 150);
+    display: inline-block;
+    background-color: aliceblue;
+    margin-top: -10px;
+    margin-right: 40px;
+    margin-bottom: 30px;
+    margin-left: 40px;
+}
+#textoPresentacion p span{
+    color:rgb(0, 26, 255);
+    font-weight: 700;
+    padding: 10px;
+}
+.profe  {
+  display: grid;
+  grid-template-columns: 650px 650px;
+  grid-template-rows: repeat(5, 280px);
+  }
+.descripcion{
+   font-family: 'Nunito', sans-serif;
+   font-weight: 500;
+   color:black;
+}
+tr, td, th {
+  border: 1px solid grey;
+  font-family: 'Nunito', sans-serif;
+  flex-wrap: wrap;
+}
+h3 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    color:black;
+    text-align: center;
+    padding: 10px;
+    border: 40px;
+}
+#actividadesEspeciales {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+  color:black;
+  text-align: center;
+  border: 20px;
+  padding: 20px;
+  border: 10px;
+}
+#calendar {
+  text-align: center;
+}
+#contacto{
+  display: grid;
+  grid-template-columns: 300px 0px;
+}
+#contactanos {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+  color:black;
+  text-align: justify;
+  display: inline-block;
+  background-color: aliceblue;
+  margin-top: -20px;
+  margin-right: 40px;
+  margin-bottom: 30px;
+  margin-left: 40px;
+  
+}
+.infoACompletar{
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+  display: inline-block;
+  margin-top: -20px;
+  margin-right: 40px;
+  margin-bottom: 30px;
+  margin-left: 40px;
+}
+.bottom{
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+}
+#ubicacion {
+  margin: 300px;
+  border: 100px;
+  padding: 100px;
+}
+footer{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
+    padding: 1%;
+    text-align: end;
+}
+footer .footer{
+    display: flex;
+    justify-content: end;
+}
+/*actividades grids*/
+.container {
+  display: grid;
+  grid-auto-columns: 1fr; 
+  grid-template-columns:  0.4fr 1fr 1fr 0.4fr; 
+  grid-template-rows:  0.01fr 0,4fr 1fr 1fr 1fr 1fr 1fr 0.8fr; 
+  gap: 2px 2px; 
+  grid-template-areas: 
+  "header header header header"
+  ". nav nav ."
+  ". main_container main_container ."
+  ". main_container main_container ."
+  ". main_container main_container ."
+  ". main_container main_container ."
+  ". main_container main_container ."
+  "footer footer footer footer"; 
+}
+.header { 
+  grid-area: header; 
+}
+.nav { 
+  grid-area: nav;
+}
+.main_container {
+  display: grid;
+  align-content: stretch;
+  justify-content: space-around;
+  align-items: stretch;
+  grid-auto-columns: 1fr; 
+  grid-auto-rows: 1fr; 
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: 0,5fr 0,5fr 0,5fr 0,5fr; 
+  gap: 6px 10px; 
+  grid-template-areas: 
+    "act1 act2"
+    "act3 act4"
+    "act5 act6"
+    "act7 act8"; 
+  grid-area: main_container;
+}
+.act1 {
+  display: grid; 
+  grid-template-columns: 1fr; 
+  grid-template-rows: 0fr 0fr 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "actividad1"
+    "imagen1"
+    "descripcion1"; 
+  grid-area: act1; 
+}
+.actividad1 { 
+  grid-area: actividad1; 
+}
+.imagen1 { 
+  grid-area: imagen1; 
+}
+.descripcion1 { 
+  grid-area: descripcion1; 
+}
+.act2 {
+  display: grid; 
+  grid-template-columns: 1fr; 
+  grid-template-rows: 0fr 0fr 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "actividad2"
+    "imagen2"
+    "descripcion2"; 
+  grid-area: act2; 
+}
+.actividad2 { 
+  grid-area: actividad2; 
+}
+.imagen2 { 
+  grid-area: imagen2; 
+}
+.descripcion2 { 
+  grid-area: descripcion2; 
+}
+.act3 {
+  display: grid; 
+  grid-template-columns: 1fr; 
+  grid-template-rows: 0fr 0fr 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "acttividad3"
+    "imagen3"
+    "descripcion3"; 
+  grid-area: act3; 
+}
+.acttividad3 { 
+  grid-area: acttividad3; 
+}
+.imagen3 { 
+  grid-area: imagen3; 
+}
+.descripcion3 { 
+  grid-area: descripcion3; 
+}
+.act4 {
+  display: grid; 
+  grid-template-columns: 1fr; 
+  grid-template-rows: 0fr 0fr 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "actividad4"
+    "imagen4"
+    "descripcion4"; 
+  grid-area: act4; 
+}
+.actividad4 { 
+  grid-area: actividad4; 
+}
+.imagen4 { 
+  grid-area: imagen4; 
+}
+.descripcion4 { 
+  grid-area: descripcion4; 
+}
+.act5 {
+  display: grid; 
+  grid-template-columns: 1fr; 
+  grid-template-rows: 0fr 0fr 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "actividad5"
+    "imagen5"
+    "descripcion5"; 
+  grid-area: act5; 
+}
+.actividad5 { 
+  grid-area: actividad5; 
+}
+.imagen5 { 
+  grid-area: imagen5; 
+}
+.descripcion5 { 
+  grid-area: descripcion5; 
+}
+.act6 {
+  display: grid; 
+  grid-template-columns: 1fr; 
+  grid-template-rows: 0fr 0fr 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "actividad6"
+    "imagen6"
+    "descripcion6"; 
+  grid-area: act6; 
+}
+.actividad6 { 
+  grid-area: actividad6; 
+}
+.imagen6 { 
+  grid-area: imagen6; 
+}
+.descripcion6 { 
+  grid-area: descripcion6; 
+}
+.act7 {
+  display: grid; 
+  grid-template-columns: 1fr; 
+  grid-template-rows: 0fr 0fr 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "actividad7"
+    "imagen7"
+    "descrpcion7"; 
+  grid-area: act7; 
+}
+.actividad7 { 
+  grid-area: actividad7; 
+}
+.imagen7 { 
+  grid-area: imagen7; 
+}
+.descrpcion7 { 
+  grid-area: descrpcion7; 
+}
+.act8 {
+  display: grid; 
+  grid-template-columns: 1fr; 
+  grid-template-rows: 0fr 0fr 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "actividad8"
+    "imagen8"
+    "descrpcion8"; 
+  grid-area: act8; 
+}
+.actividad8 { 
+  grid-area: actividad8; 
+}
+.imagen8 { 
+  grid-area: imagen8; 
+}
+.descrpcion8 { 
+  grid-area: descrpcion8; 
+}
+.footer { 
+  grid-area: footer; 
+}
+/*gridsII*/
+@media (max-width: 768px) {
+  .main_container {
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "act1"
+      "act2"
+      "act3"
+      "act4"
+      "act5"
+      "act6"
+      "act7"
+      "act8"; 
+    grid-area: main_container; 
+  }
+}
+/*index grids*/
+.container1 {  
+  display: grid;
+  grid-template-columns: 0.3fr 10fr 0.3fr;
+  grid-template-rows: 0.5fr 0.4fr 2.7fr 0.4fr;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  gap: 2px 2px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "header header header"
+    ". nav ."
+    ". main_container ."
+    "footer footer footer";
+}
+.header { 
+  grid-area: header; 
+}
+.nav {  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid: template rows 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "menu menu";
+  grid-area: nav;
+}
+.main_container1 {  
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.4fr 0fr 1fr;
+  grid-auto-rows: 5fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "sobre_nosotros sobre_nosotros sobre_nosotros"
+    "texto texto texto"
+    "video video video";
+  grid-area: main_container;
+}
+.sobre_nosotros { grid-area: 
+  sobre_nosotros; 
+}
+.texto { 
+  grid-area: texto; 
+}
+.video { 
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    ". videito ."; 
+  grid-area: video; 
+}
+.videito { grid-area: videito; }
+.footer { 
+  grid-area: footer; 
+}
+/*gridsI/II staff*/
+/*gridsI/II actividades especiales*/
+/*gridsI/II contacto*/
+/*animaciones*/
+/*GIT*/
+/*GITHUB*/
